@@ -2,7 +2,7 @@
 let process_started name =
   Logs.info (fun m -> m "Started process %s" name)
 
-let process_terminated =
+let process_terminated () =
   Logs.info (fun m -> m "Exiting process")
 
 let square_func_executed res =

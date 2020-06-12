@@ -9,7 +9,7 @@ let laaf_dispatch app_t () =
   Logger.square_func_executed cb_ans;
   let sq2_ans = Math.sq 11 in 
   Logger.square_func_executed sq2_ans;
-  Logger.process_terminated (* ph: process exits before this? *)
+  Logger.process_terminated ()
 
 let application_term =
   Arg.(value
