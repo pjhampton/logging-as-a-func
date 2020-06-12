@@ -1,0 +1,3 @@
+(executable
+ (name laaf)
+ (libraries base cmdliner ezlogs-cli))

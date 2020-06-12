@@ -1,0 +1,26 @@
+opam-version: "2.0"
+name: "alpha"
+version: "dev"
+maintainer: [ "pjhampton <go@away.com>" ]
+authors: [ "pjhampton <go@away.com>" ]
+license: "MIT"
+synopsis: "Experiments with hez cartys logging lib"
+homepage: "https://github.com/pjhampton/logging-as-a-func"
+bug-reports: "https://github.com/pjhampton/logging-as-a-func"
+dev-repo: "https://github.com/pjhampton/logging-as-a-func"
+depends: [
+  "ocaml-base-compiler" {>= "4.10.0"}
+  "cmdliner"
+  "dune"
+  "ecs"
+  "ezlogs-cli"
+  "ezlogs-cli-lwt"
+  "merlin"
+  "utop"
+  "opam-lock"
+]
+pin-depends: [
+  [ "ecs.dev" "git+https://github.com/hcarty/ezlogs-cli#master" ]
+  [ "ezlogs-cli.dev" "git+https://github.com/hcarty/ezlogs-cli#master" ]
+  [ "ezlogs-cli-lwt.dev" "git+https://github.com/hcarty/ezlogs-cli#master" ]
+]
